@@ -18,7 +18,6 @@ ol, ul {
 .header{
 	font-family: Arial, sans serif;
 	background: #EFF0F1;
-	padding: 10px;
 	clear: none;
 	position: relative;
 	border-bottom-style: groove;
@@ -26,31 +25,37 @@ ol, ul {
 	border-bottom-width: thin;
 }
 
-.logo img {
-	height: 50px;
-	float: left;
-	position: absolute;
-	top: 5px;
-}
 
 .header li {
-	text-align: center;
+	float: left;
 }
 
-.header ul a {
+.header ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #fff;
+}
+
+.header li a {
    display: block;  
-   padding: 0 1% 0 0;
+   padding: 14px 16px;
    color: #000000;
    font-weight: 300;
-   width: 10%;
    margin: 0;
    float: right;
-   text-align: center;
-   
+   text-align: center;  
+}
+
+.header li a:hover {
+	background-color: #111;
+	color: #fff;
 }
 
 .icons {
 	text-align: center;
+	width= 33%;
 	margin: 50px 0;
 }
 
@@ -58,6 +63,7 @@ ol, ul {
 	display: inline-block;
 	width: 100px;
 	margin: 0 10%;
+	align: center;
 }
 
 .icons p {
@@ -107,17 +113,19 @@ ol, ul {
 .read-more-ctas {
 	 margin-top: 20px;
 	 height: 300px;
-	 background-image: url("stockphoto.jpg");
+	 background-image: url("modernkitchen.jpg");
 	 background-position: center left;
+	 background-size: contain;
 	 background-repeat: no-repeat;
 	 display: block;
+	 position: relative;
 }
 
 .description1 {
 	display: inline-block;
 	width: 50%;
 	float: right;
-	background: gray;
+	background: #EFF0F1;
 	height: inherit;
 }
 
@@ -125,6 +133,33 @@ ol, ul {
 	padding-left: 10px;
 }
 
+.description2 {
+	display: inline-block;
+	width: 40%;
+	float: left;
+	background: #EFF0F1;
+	height: inherit;
+}
+
+.description2 p, h2 {
+	padding-left: 10px;
+}
+
+.read-more-ctas2 {
+	 margin-bottom: 20px;
+	 height: 300px;
+	 background-image: url("kitchen.png");
+	 background-position: center right;
+	 background-repeat: no-repeat;
+	 display: block;
+}
+
 .contact-us{
 	display: block;
 }
+
+.contact-info-text, .contact-info-num, .contact-info-mail {
+	display: inline-block;
+	width: 33%;
+	vertical-align: text-top;
+	text-align: center;

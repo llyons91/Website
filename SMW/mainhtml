@@ -11,7 +11,7 @@
 
 <body>
 	<div class="header">
-			<div class="logo"><img src="logo.png" alt=""/></div>
+			<!-- <div class="logo"><img src="logo.png" alt=""/></div> -->
 			<ul>
 				<li><a href="#">Home</a></li>
 				<li><a href="#">About</a></li>
@@ -34,27 +34,70 @@
 		</span>
 	</div>
 	<div class="big-picture">
-		<img src="stockphoto.jpg"/>
+		<img class="mySlides" src="kitchen.png"/>
+		<img class="mySlides" src="stove.png"/>
+		<img class="mySlides" src="stockphoto.jpg"/>
+		<img class="mySlides" src="stockphoto.jpg"/>
+		<button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
 	</div>
 	<div class="cta">
 		<p>Make your home more beautiful<p>
 		<div class="button"><p>Free quote</p></div>
-		</div>
+	</div>
 	<div class="read-more-ctas">
 		<div class= "description1"/>
 			<span><h2>Home Renovation</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut metus justo. Nunc mauris enim, scelerisque eget sapien sit amet, vestibulum semper lectus. Maecenas accumsan erat nec mauris condimentum, nec ultrices tortor blandit. Mauris tempus, sem non laoreet commodo, orci orci condimentum enim, ac facilisis ipsum risus vitae arcu. Cras suscipit orci sit amet tempus facilisis. Cras rhoncus turpis vitae mattis viverra. Sed consectetur massa ac lorem ultricies suscipit.</p>
 			</span>
-		<div>	
-	<div>
-	
+		</div>	
+	</div>
+		<div class="read-more-ctas2">
+		<div class= "description2"/>
+			<span><h2>Home Renovation</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut metus justo. Nunc mauris enim, scelerisque eget sapien sit amet, vestibulum semper lectus. Maecenas accumsan erat nec mauris condimentum, nec ultrices tortor blandit. Mauris tempus, sem non laoreet commodo, orci orci condimentum enim, ac facilisis ipsum risus vitae arcu. Cras suscipit orci sit amet tempus facilisis. Cras rhoncus turpis vitae mattis viverra. Sed consectetur massa ac lorem ultricies suscipit.</p>
+			</span>
+		</div>	
+	</div>	
 	<div class="contact-us">
-		<div class= "contact-info-text"/>
+		<div class= "contact-info-text">
 			<span><h2>Contact Us</h2></span>
 			<span><p>Scherban Mica Works</p></span>
 			<span><p>210 SE 12th Ave</p></span>
 			<span><p>Boynton Beach, FL 33435-6064</p></span>
-		<div>	
-	<div>
+		</div>	
+		<div class= "contact-info-num">
+			<span><h2>Call</h2></span>
+			<span><p>561-732-4960</p></span>
+		</div>	
+			<div class= "contact-info-mail">
+			<span><h2>Email</h2></span>
+			<address><span><p>bob@scherbanmicaworks.com</p></span></address>
+		</div>	
+	</div>
+
+<script type="text/javascript">
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+    showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1} 
+    if (n < 1) {slideIndex = x.length} ;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none"; 
+    }
+    x[slideIndex-1].style.display = "block"; 
+}
+</script>	
+	
 	
 </body>
+
+
+
